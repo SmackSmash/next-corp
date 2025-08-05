@@ -2,18 +2,18 @@ import Image from 'next/image';
 import { type StaticImageData } from 'next/image';
 
 export default function Hero({
-  image,
-  alt,
-  header
+  imgData,
+  imgAlt,
+  title
 }: {
-  image: StaticImageData;
-  alt: string;
-  header: string;
+  imgData: StaticImageData;
+  imgAlt: string;
+  title: string;
 }) {
   return (
     <div>
-      <Image src={image} alt={alt} fill objectFit='cover' className='-z-10' />
-      <h1>{header}</h1>
+      <Image src={imgData} alt={imgAlt} fill objectFit='cover' className='-z-10' />
+      <h1>{title}</h1>
     </div>
   );
 }
