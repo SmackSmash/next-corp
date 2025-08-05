@@ -4,7 +4,7 @@ import HomeImage from '@/../public/home.jpg';
 export default function Home() {
   return (
     <div>
-      <Image src={HomeImage} alt='Factory' />
+      <Image src={HomeImage} alt='Factory' fill objectFit='cover' />
     </div>
   );
 }
