@@ -1,10 +1,7 @@
 import Image from 'next/image';
-import HomeImage from '@/../public/home.jpg';
+import homeImage from '@/../public/home.jpg';
+import Hero from '@/components/hero';
 
 export default function Home() {
-  return (
-    <div>
-      <Image src={HomeImage} alt='Factory' fill objectFit='cover' className='-z-10' />
-    </div>
-  );
+  return <Hero image={homeImage} alt='factory' header='Look at there robots' />;
 }
