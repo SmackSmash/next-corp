@@ -1,3 +1,10 @@
+import Image from 'next/image';
+import HomeImage from '@/../public/home.jpg';
+
 export default function Home() {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <Image src={HomeImage} alt='Factory' />
+    </div>
+  );
 }
