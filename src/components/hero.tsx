@@ -9,9 +9,10 @@ type HeroProps = {
 
 export default function Hero({ imgData, imgAlt, title }: HeroProps) {
   return (
-    <div>
+    <div className='absolute flex h-screen w-screen items-center justify-center'>
       <Image src={imgData} alt={imgAlt} fill objectFit='cover' className='-z-10' />
-      <h1>{title}</h1>
+      <div className='absolute -z-10 size-full bg-linear-to-l from-transparent to-black'></div>
+      <h1 className='text-4xl font-bold'>{title}</h1>
     </div>
   );
 }
